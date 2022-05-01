@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<article>
+  <header>
+    <h1>{{ page.title | escape }}</h1>
+    <p>
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: site.datefmt }}
+      </time>
+
+      {%- if page.author -%}
+        • <span>{{ page.author }}</span>
+      {%- endif -%}
+    </p>
+  </header>
+
+  <div>
+    {{ content }}
+    <hr/>
+  </div>
+
+  <a href="{{ page.url | relative_url }}" hidden></a>
+</article>

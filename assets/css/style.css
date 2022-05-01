@@ -1,0 +1,26 @@
+body {
+    background-color: #fff;
+    color: #727272;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 55px;
+}
+
+.sidebar {
+    flex-grow: 1;
+}
+
+.content {
+    flex-grow: 3;
+}
+
+.sidebar h1 {
+    color: black;
+    font-size: 3em;
+    margin-top: 0;
+}
+
+a{
+    text-decoration: none;
+}
